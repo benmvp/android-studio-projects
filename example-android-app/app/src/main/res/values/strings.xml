@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExampleAndroidApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcomestring">Ben\'s First App!</string>
+</resources>
