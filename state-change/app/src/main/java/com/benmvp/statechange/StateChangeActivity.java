@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 public class StateChangeActivity extends AppCompatActivity {
 
@@ -57,12 +58,20 @@ public class StateChangeActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         Log.i(TAG, "onSaveInstanceState");
+
+        final EditText textBox = (EditText) findViewById(R.id.editText);
+        CharSequence userText = textBox.getText();
+        outState.putCharSequence("savedText", userText);
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         Log.i(TAG, "onRestoreInstanceState");
+
+        final EditText textBox = (EditText) findViewById(R.id.editText);
+        CharSequence userText = savedInstanceState.getCharSequence("savedText");
+        textBox.setText(userText);
     }
 
     @Override
