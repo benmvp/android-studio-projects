@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".EventExampleActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/press_me_button_text"
+        android:id="@+id/myButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/status_text"
+        android:id="@+id/myTextView"
+        android:layout_above="@+id/myButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp" />
+</RelativeLayout>

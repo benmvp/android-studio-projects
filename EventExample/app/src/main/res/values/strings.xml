@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EventExample</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="press_me_button_text">PRESS ME</string>
+    <string name="status_text">Status</string>
+</resources>
